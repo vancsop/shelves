@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gallery_loading">Loading</string>
+    <string name="gallery_empty">Nothing to show. Add your items first!</string>
+    <string name="gallery_export">Export</string>
+    <string name="gallery_export_message">A CSV has been added to your Downloads folder</string>
+</resources>

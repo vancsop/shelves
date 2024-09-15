@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_shelf_id_hint">Please set your shelf id first!</string>
+    <string name="camera_shelf_id_label">Shelf id</string>
+    <string name="camera_catalogue">Catalogue</string>
+</resources>

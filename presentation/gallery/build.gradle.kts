@@ -17,4 +17,7 @@ dependencies {
     implementation(projects.domain.catalogue)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     kapt(libs.hilt.compiler)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

@@ -1,7 +1,7 @@
 package com.vancsop.shelves.domain.catalogue
 
+import com.vancsop.shelves.data.core.CSV
 import com.vancsop.shelves.data.core.CatalogueRepo
-import com.vancsop.shelves.data.files.CSV
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.take
 import timber.log.Timber

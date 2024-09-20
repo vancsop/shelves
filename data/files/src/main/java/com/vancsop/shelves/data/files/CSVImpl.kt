@@ -1,6 +1,7 @@
 package com.vancsop.shelves.data.files
 
 import android.os.Environment
+import com.vancsop.shelves.data.core.CSV
 import com.vancsop.shelves.data.core.CatalogueRepo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -9,8 +10,8 @@ import java.io.FileOutputStream
 import java.io.OutputStream
 import javax.inject.Inject
 
-class CSV @Inject constructor() {
-    suspend fun createFrom(items: List<CatalogueRepo.Item>): Result<String> {
+class CSVImpl @Inject constructor(): CSV {
+    override suspend fun createFrom(items: List<CatalogueRepo.Item>): Result<String> {
         val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
             .path.plus("/export_shelves_${System.currentTimeMillis()}.csv")
 

@@ -11,7 +11,4 @@ android {
 
 dependencies {
     implementation(projects.data.core)
-    implementation(projects.data.catalogue)
-    implementation(projects.data.classifier)
-    implementation(projects.data.files)
 }

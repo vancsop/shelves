@@ -61,6 +61,7 @@ dependencies {
     implementation(projects.data.catalogue)
     implementation(projects.data.classifier)
     implementation(projects.data.core)
+    implementation(projects.data.files)
 
     implementation(libs.timber)
     implementation(libs.androidx.navigation.compose)

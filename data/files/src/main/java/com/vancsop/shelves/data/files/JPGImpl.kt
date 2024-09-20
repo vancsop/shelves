@@ -2,6 +2,7 @@ package com.vancsop.shelves.data.files
 
 import android.graphics.Bitmap
 import android.os.Environment
+import com.vancsop.shelves.data.core.JPG
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -11,8 +12,8 @@ import java.nio.file.Paths
 import java.util.UUID
 import javax.inject.Inject
 
-class JPG @Inject constructor() {
-    suspend fun createFrom(bitmap: Bitmap): Result<String> {
+class JPGImpl @Inject constructor(): JPG {
+    override suspend fun createFrom(bitmap: Bitmap): Result<String> {
         val fileName = "${UUID.randomUUID()}.jpg"
         val dir = Environment.getExternalStoragePublicDirectory(
             Environment.DIRECTORY_PICTURES

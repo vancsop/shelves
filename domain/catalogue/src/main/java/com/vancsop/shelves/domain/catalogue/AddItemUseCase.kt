@@ -2,7 +2,7 @@ package com.vancsop.shelves.domain.catalogue
 
 import android.graphics.Bitmap
 import com.vancsop.shelves.data.core.CatalogueRepo
-import com.vancsop.shelves.data.files.JPG
+import com.vancsop.shelves.data.core.JPG
 import javax.inject.Inject
 
 class AddItemUseCase @Inject constructor(
